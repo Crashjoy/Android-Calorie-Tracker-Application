@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Page Title -->
+        <TextView
+            android:id="@+id/tvAddMealTitle"
+            android:text="ADD MEAL"
+            android:textSize="26sp"
+            android:textColor="#222222"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <!-- Separator -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#CCCCCC"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"/>
+
+        <!-- Food Name + ADD -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvFoodName"
+                android:text="Food names"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+
+            <Button
+                android:id="@+id/btnAddFood"
+                android:text="+ ADD"
+                android:textAllCaps="false"
+                android:layout_marginStart="10dp"
+                android:backgroundTint="#2196F3"
+                android:textColor="#FFFFFF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <!-- List of food items -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginTop="15dp"
+            android:padding="5dp"
+            android:background="@drawable/list_border">
+
+            <ListView
+                android:id="@+id/lvFoodItems"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:dividerHeight="1dp"/>
+
+            <TextView
+                android:id="@+id/tvListPlaceholder"
+                android:text="No food items added yet"
+                android:textColor="#777777"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </FrameLayout>
+
+        <!-- Meal Type ComboBox -->
+        <TextView
+            android:text="Meal type"
+            android:textSize="18sp"
+            android:textColor="#333333"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Spinner
+            android:id="@+id/spMealType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- Calories total -->
+        <TextView
+            android:id="@+id/tvMealCalories"
+            android:text="Calories: 0"
+            android:textSize="18sp"
+            android:textColor="#444444"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <!-- Save Button -->
+        <Button
+            android:id="@+id/btnSaveMeal"
+            android:text="SAVE"
+            android:textAllCaps="false"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btnBack"
+            android:text="← Back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#DDDDDD"
+            android:textColor="#000000"/>
+
+    </LinearLayout>
+</ScrollView>

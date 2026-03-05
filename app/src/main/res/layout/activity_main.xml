@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center_horizontal"
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- App Title -->
+    <TextView
+        android:id="@+id/tvAppTitle"
+        android:text="Calorie Tracker"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#222222"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!-- Separator line -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#CCCCCC"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Date Picker -->
+    <LinearLayout
+        android:id="@+id/datePickerLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:text="Today"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_menu_my_calendar"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+
+    <!-- Circle with calories consumed -->
+    <FrameLayout
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:gravity="center">
+
+        <com.example.aldiyarbaibogurov_test2.CircularProgressBar
+            android:id="@+id/circleProgress"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/tvCaloriesConsumed"
+            android:text="0 calories"
+            android:textSize="22sp"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </FrameLayout>
+
+    <!-- Remaining calories -->
+    <TextView
+        android:id="@+id/tvRemaining"
+        android:text="500 remaining"
+        android:textSize="18sp"
+        android:textColor="#444444"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!-- Add Meal Button -->
+    <Button
+        android:id="@+id/btnAddMeal"
+        android:text="+ ADD MEAL"
+        android:textAllCaps="false"
+        android:backgroundTint="#4CAF50"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnHistory"
+        android:text="HISTORY"
+        android:textAllCaps="false"
+        android:backgroundTint="#2196F3"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnCalculator"
+        android:text="CALORIE CALCULATOR"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/accent"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnWeeklyStats"
+        android:text="WEEKLY STATS"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/secondary"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnSetGoal"
+        android:text="SET DAILY GOAL"
+        android:textAllCaps="false"
+        android:backgroundTint="#FF9800"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

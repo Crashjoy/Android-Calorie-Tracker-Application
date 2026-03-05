@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Privacy Policy"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#222222"
+            android:layout_marginBottom="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="By using this app, you agree that your calorie and food data are stored locally on your device only. No personal data or tracking information is shared or transmitted. Tap 'Agree' to continue."
+            android:textSize="16sp"
+            android:textColor="#444444"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <CheckBox
+            android:id="@+id/cbAccept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I accept the privacy policy."
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:id="@+id/btnAgree"
+            android:text="Agree and Continue"
+            android:textAllCaps="false"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#FFFFFF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"/>
+    </LinearLayout>
+</ScrollView>
