@@ -13,23 +13,20 @@ simple on-the-go tool that works offline.
 
 ## Screenshots
 
-**Main page**
-![Main page](screenshots/main.png)
+<p align="left">
+  <img src="app/src/main/res/drawable/dailylog.png" width="250">
+  <img src="app/src/main/res/drawable/historyToday.png" width="250">
+</p>
 
-**Today's history**
-![Today's history](screenshots/history-today.png)
+<p align="left">
+  <img src="app/src/main/res/drawable/oldHistory.png" width="250">
+  <img src="app/src/main/res/drawable/addMeal.png" width="250">
+</p>
 
-**History from a year ago**
-![One-year history](screenshots/history-year.png)
-
-**Add meal**
-![Add meal](screenshots/add-meal.png)
-
-**Calorie calculator**
-![Calorie calculator](screenshots/calculator.png)
-
-**Weekly stats**
-![Weekly stats](screenshots/weekly-stats.png)
+<p align="left">
+  <img src="app/src/main/res/drawable/calorieCalc.png" width="250">
+  <img src="app/src/main/res/drawable/weeklyStats.png" width="250">
+</p>
 
 
 ## Tech stack
