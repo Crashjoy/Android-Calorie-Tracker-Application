@@ -1,38 +1,48 @@
-# 📱 Android Calorie Tracker
+# Android Calorie Tracker
 
-## 📋 Project Overview
+A native Android app for tracking daily calorie intake, built with Java and
+Android Studio. It replaces a manual, paper-and-Excel tracking process with a
+simple on-the-go tool that works offline.
 
-A native Android calorie tracking application designed to help users manage their weight through daily intake monitoring. This project demonstrates end-to-end mobile development, focusing on persistent local data storage, intuitive UI design, and rigorous behavioral-driven development (BDD) testing.
+## What it does
 
-## 🚀 The Challenge
+- Log meals and snacks and see your daily calorie total
+- Track progress against a daily goal
+- Save your history locally so you can pick up where you left off
+- Works fully offline — no account or internet connection needed
 
-The user needed a reliable, portable tool to replace a manual, paper-and-Excel-based tracking process. The core challenge was to create an app that is easy to use on the go, allows for offline data access, and provides a clear history of caloric intake.
+## Screenshots
 
-## ✨ Key Features
-- 📊 **Caloric Monitoring:** Log meals/snacks, calculate daily totals, and track progress against goals.
-- 💾 **Offline Storage:** Implemented SQLite for secure, persistent local data storage and history retrieval.
-- ♿ **Accessibility First:** Designed following WCAG accessibility guidelines to ensure a user-friendly experience for all.
-- 🔐 **Data Persistence:** Allows users to save progress and return to their tracking session without needing to keep the app open.
-- 🧪 **BDD Testing:** Verified functionality and stability using Behavioral Driven Design (BDD) testing scenarios.
+**Main page**
+![Main page](screenshots/main.png)
 
-## 🛠️ Tech Stack
-- **Language:** Java
-- **IDE:** Android Studio
-- **Database:** SQLite
-- **Architecture:** Android SDK, MVC/MVVM patterns
-- **Compliance:** WCAG Accessibility Standards
-- **Development Lifecycle:** BDD (Given-When-Then) Testing
+**Today's history**
+![Today's history](screenshots/history-today.png)
 
-## 🏗️ Technical Highlights
-- **Lifecycle Management:** Engineered to maintain app state, ensuring users can resume tasks seamlessly after closing the app.
-- **Data Modeling:** Developed a robust role-based data model to handle user inputs and history queries efficiently.
-- **Accessibility:** Implemented custom splash/loading screens with a focus on UI responsiveness and WCAG compliance.
+**History from a year ago**
+![One-year history](screenshots/history-year.png)
 
-## 📈 Impact & Results
-- **User-Centric Design:** Successfully translated a manual, cumbersome process into a seamless mobile workflow.
-- **Professional Readiness:** Completed the full software development lifecycle, including Google Play Store submission documentation and rigorous BDD test planning.
+**Add meal**
+![Add meal](screenshots/add-meal.png)
 
-# 📬 Contact
-- 💼 Aldiyar Baibogurov
-- 📧 abaibogurov@gmail.com
-- 🔗 [LinkedIn](https://www.linkedin.com/in/aldiyar-baibogurov/)
+**Calorie calculator**
+![Calorie calculator](screenshots/calculator.png)
+
+**Weekly stats**
+![Weekly stats](screenshots/weekly-stats.png)
+
+
+## Tech stack
+
+- Language: Java
+- IDE: Android Studio
+- Database: SQLite (local, offline persistence)
+- Architecture: Android SDK, MVC/MVVM patterns
+
+## Getting started
+
+Prerequisites: Android Studio (latest stable), JDK 17+
+
+```bash
+git clone https://github.com/Crashjoy/Android-Calorie-Tracker-Application
+cd Android-Calorie-Tracker-Application
